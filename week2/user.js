@@ -1,7 +1,7 @@
 const {Router} = require('express')
 const router = Router();
 
-router.get('user',(req,res)=>{
+router.get('/user',(req,res)=>{
     const a =req.query.a;
     const b =req.query.b;
     res.send(`You sent a=${a}, b=${b}`);
